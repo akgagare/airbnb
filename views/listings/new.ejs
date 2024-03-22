@@ -1,0 +1,46 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="row">
+        <div class="col-8">
+    <form action="/listings/new" method="POST" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label  for="title" class="form-label">Title</label>
+            <input name="title" type="text" placeholder="title" class="form-control" required></input>
+            <div class="invalid-feedback">Plese enter the Title</div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <input type="text" name="description" placeholder="description" class="form-control"></input>
+            <div class="invalid-feedback">Please enter a Description</div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Image</label>
+            <input type="text" name="image" placeholder="image-url" class="form-control"></input>
+            <div class="invalid-feedback">Please Enter a Image URL</div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Price</label>
+            <input type="number" name="price" placeholder="price" class="form-control" required></input>
+            <div class="invalid-feedback">Please enter valid price</div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Location</label>
+            <input type="text" name="location" placeholder="Location" class="form-control" required></input>
+            <div class="invalid-feedback">Please enter valid location</div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Country</label>
+            <input type="text" name="country" placeholder="country" class="form-control" required></input>
+            <div class="invalid-feedback">Please enter valid country</div>
+        </div>
+
+        <button type="submit" class="btn button">ADD</button>
+    </form>
+</body>
+</div>
+</div>
